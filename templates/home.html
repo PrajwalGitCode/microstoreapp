@@ -1,0 +1,369 @@
+{% extends 'main.html' %}
+
+{% block body_block %}
+
+{% load static %}
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'homepage/images/img3.jpg' %}" class="d-block w-100" alt="..."
+        style="height:100vh !important;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Asus Zenbook</h5>
+        <p>Launching on 22 September</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'homepage/images/img4.png' %}" class="d-block w-100" alt="..."
+        style="height:100vh !important;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Samsung Galaxy Fold</h5>
+        <p>Launching on 28 September</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'homepage/images/img1.jpg' %}" class="d-block w-100" alt="..."
+        style="height:100vh !important;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Asus ROG Strix</h5>
+        <p>Launching on 14 September</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <i class="fa fa-eercast fa-100x" aria-hidden="true" style="font-size: 250px;"></i>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>About Us</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, your ultimate destination for cutting-edge technology and innovative gadgets. Founded
+            with a passion for all things tech, we aim to bring the future to your doorstep today.
+
+            At NebulaKart, we believe technology is more than just tools—it's a lifestyle, a gateway to endless
+            possibilities. Whether you’re a tech enthusiast, a professional seeking the latest gear, or simply looking
+            to upgrade your devices, we’ve got you covered. Our carefully curated selection features everything from the
+            latest smartphones and laptops to smart home devices and wearable tech, ensuring you always stay ahead of
+            the curve.
+
+            What sets us apart is our commitment to quality and customer satisfaction. We work closely with top
+            manufacturers and emerging brands to offer you only the best products at competitive prices. Our
+            knowledgeable team is always here to help, providing expert advice and support to make sure you find exactly
+            what you need.
+
+            At NebulaKart, we’re more than just a store—we’re a community of tech lovers. Join us on our journey to
+            explore the limitless potential of technology, and let’s shape the future together.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Watches</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, where we bring you a wide range of watches designed to suit
+            every taste. Whether you’re in the market for a state-of-the-art smartwatch or a classic watch with timeless
+            appeal, we have something for everyone.
+            At NebulaKart, we prioritize quality and craftsmanship in every watch we offer. Our collection features only
+            the best, ensuring you find a watch that not only keeps time but also complements your personal style.
+            Explore our selection and experience the perfect blend of innovation and tradition.
+          </p>
+          <a href="{% url 'watch' %}"> Explore Watches </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img6.png' %}" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img9.png' %}" alt="...">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Mobiles</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, your trusted source for the latest and most advanced mobile phones. Whether you're
+            looking for the newest flagship model or a budget-friendly option, our extensive selection ensures you’ll
+            find the perfect phone to fit your needs.
+
+            At NebulaKart, we’re committed to providing top-tier quality and cutting-edge technology. Our curated range
+            of mobile phones includes the latest innovations, offering you powerful performance, stunning designs, and
+            the best in mobile connectivity. Explore our collection and stay connected with the world in style.
+          </p>
+          <a href="{% url 'mobile' %}">Explore Mobiles </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Laptops</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, where we bring you the best in laptop technology. Whether you're a professional
+            seeking powerful performance, a student looking for reliability, or a gamer in need of top-tier graphics,
+            our selection of laptops has something for everyone.
+
+            At NebulaKart, we are dedicated to offering high-quality laptops that combine cutting-edge innovation with
+            sleek design. Our carefully chosen range includes the latest models from leading brands, ensuring you get
+            the performance and features you need to excel. Discover the perfect laptop to power your ambitions at
+            NebulaKart.
+          </p>
+          <a href="{% url 'laptop' %}"> Explore Laptops </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img10.png' %}" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img11.png' %}" alt="...">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Graphic Cards</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, your ultimate destination for high-performance graphic cards. Whether you're a gamer
+            seeking immersive visuals, a designer needing precision, or a tech enthusiast looking to upgrade your rig,
+            we have the perfect graphic card for you.
+
+            At NebulaKart, we prioritize performance and innovation. Our collection of graphic cards features the latest
+            technology from top brands, ensuring you get the power and reliability you need for your most demanding
+            tasks. Elevate your experience and unlock new levels of performance with our premium selection of graphic
+            cards.
+          </p>
+          <a href="{% url 'graphic' %}">Explore Graphic Cards </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Processors</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, where we offer the latest in CPU technology to power your
+            computing needs. Whether you’re building a high-performance gaming rig, upgrading your workstation, or
+            seeking efficiency for everyday tasks, our selection has you covered.
+
+            At NebulaKart, we understand that a great processor is the heart of a powerful system. That's why we feature
+            cutting-edge processors from leading brands, designed to deliver speed, reliability, and exceptional
+            performance. Explore our range and find the perfect processor to drive your next project or enhance your
+            tech setup.
+          </p>
+          <a href="{% url 'processor' %}"> Explore Processors </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img12.png' %}" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="img-box">
+          <img src="{% static 'homepage/images/img13.png' %}" alt="...">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-7">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>Accessories</h2>
+          </div>
+          <p>
+            Welcome to NebulaKart, where we range from ergonomic mice and high-fidelity earphones to essential gadgets that complement
+            your setup, we offer a diverse range of accessories designed to elevate your daily digital interactions.
+
+            At NebulaKart, we believe that the right accessories can make all the difference. Our selection features the
+            latest in technology and design, ensuring you find products that not only meet your needs but also add a
+            touch of style to your setup. Explore our collection and discover the perfect accessories to complete your
+            tech arsenal.
+          </p>
+          <a href="{% url 'accessory' %}">Explore Accessories </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<style>
+  .offer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .watch-list {
+    background-color: black;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+
+  .watch-list .card {
+    margin-top: 50px;
+  }
+
+  .card-img-top {
+    height: 210px;
+  }
+
+  .col-3 {
+    padding-top: 100px;
+  }
+
+
+  .about_section {
+    background-color: #000000;
+    color: #ffffff;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about_section h2 {
+    color: rgb(255, 174, 0);
+  }
+
+  .about_section .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .about_section .img-box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .about_section .img-box img {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .about_section .detail-box p {
+    margin-top: 15px;
+  }
+
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid orange;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+
+  .about_section .detail-box a:hover {
+    color: #ffffff;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+</style>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% block body_block %}
+
+
+<div class="form-box">
+
+    <form class="watch-form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary">Create Account </button>
+    </form>
+</div>
+
+
+
+
+
+<style>
+    .form-box {
+        padding: 100px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+
+    .form-group {
+        padding-bottom: 30px;
+    }
+
+    .watch-form {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+
+
+{% endblock %}
